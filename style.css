@@ -1,0 +1,181 @@
+body {
+	background-color: #f8fafc;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+header{
+	background-color: #020617;
+	color: #f8fafc;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	position: sticky;
+	top: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	width: 1024px;
+	max-width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+a {
+	color:#f8fafc;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+main {
+		color: #020617;
+		padding: 20px;
+		text-align: left;
+		max-width: 1024px;
+}
+
+h1{
+		font-size: 24px;
+		font-weight: bold;
+		color: #f8fafc;
+		margin-bottom: 10px;
+}
+
+h2{
+		font-size: 20px;
+		font-weight: bold;
+		color: #020617	;
+		margin-bottom: 10px;
+}
+
+p{
+		font-size: 16px;
+		font-weight: normal;
+		margin-bottom: 10px;
+}
+
+nav {
+	display: flex;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;	
+}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #020617;
+}
+
+nav a {
+	display:block;
+	padding:0px;	
+	color:#f8fafc;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav ul ul a {
+	padding:0 10px;	
+}
+
+nav a:hover { 
+	background-color: #0f172a; 
+	transition: background-color 0.5s ease;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	margin-left: -60px;
+}
+
+@media (max-width: 1080px) {
+	nav ul ul {
+		margin-left: 0;
+		right: 0;
+	}
+}
+	
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+nav ul ul li {
+	float:none;
+	display:list-item;
+	position: relative;
+	padding: 0 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+label {
+	font-size: 16px;
+	font-weight: 500;
+
+}
+
+input {
+	padding: 10px;
+	border: 1px solid #020617;
+	border-radius: 5px;
+}
+
+textarea {
+	padding: 10px;
+	border: 1px solid #020617;
+	border-radius: 5px;
+	max-height: 80px;
+}
+
+.center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button {
+	padding: 10px 30px;
+	border: 1px solid #020617;
+	border-radius: 5px;
+	background-color: #020617;
+	color: #f8fafc;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0f172a;
+	transition: background-color 0.5s ease;
+}
+
+footer {
+	background-color: #020617;
+	color: #f8fafc;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+}
